@@ -1,0 +1,89 @@
+@import url(./font.css);
+
+.container{
+    width:100%;
+    height:200vh;
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+    font-family: Pretendard;
+}
+
+.container header{
+    background:#fff462;
+    width:20%;
+    height: 100vh;
+    overflow:hidden;
+    position: fixed;
+    left:0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+}
+header .profile_area{
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    background:#ddd;
+    margin-bottom:20px;
+}
+.profile_area a{
+    width:100%;
+    height:100%;
+    display: block;
+}
+#nav_area .item{
+    text-align:center;
+    margin:20px;
+}
+#nav_area .item:last-child{
+    margin-bottom:0;
+}
+#nav_area .item a{
+    font-size:25px;
+}
+
+main{
+    width:80%;
+}
+
+main .area{
+    height:100vh;
+}
+main .main_area{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background:url('../img/out.gif') no-repeat center / cover;
+}
+main .main_area::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity: 0.5;
+}
+main .main_area h1{
+    position: relative;
+    z-index: 9;
+    color:#fff;
+    font-family: manru;
+    font-style:italic;
+    font-size:40px;
+}
+.hidden_word{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
