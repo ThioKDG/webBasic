@@ -1,5 +1,8 @@
-@import url(./font.css);
+    /* import */
+    @import url(./font.css); 
+    @import url(./keyprames.css);
 
+/* container */
 .container{
     width:100%;
     height:200vh;
@@ -21,11 +24,13 @@
     align-items: center;
     padding-top:50px;
 }
+
+/* header */
 header .profile_area{
     border-radius: 50%;
     width:200px;
     height:200px;
-    background:#ddd url('../img/113421699.jfif') no-repeat center / contain;
+    background:#ddd url('../img/113421699.jfif') no-repeat center / cover;
     margin-bottom:20px;
 }
 .profile_area a{
@@ -33,6 +38,17 @@ header .profile_area{
     height:100%;
     display: block;
 }
+.name{
+    width:100%;
+    margin: 20px 0;
+}
+.name h1{
+    font-size:40px;
+    font-family: manru;
+    text-align:center;
+}
+
+/* nav style */
 #nav_area{width:100%;}
 #nav_area .item{
     text-align:center;
@@ -50,10 +66,10 @@ header .profile_area{
     background:#fff;
 }
 
+/* body style */
 main{
     width:80%;
 }
-
 main .area{
     height:100vh;
 }
@@ -76,14 +92,50 @@ main .main_area::after{
     background:#000;
     opacity: 0.5;
 }
-main .main_area h1{
+main .main_area p{
     position: relative;
     z-index: 9;
+    line-height: 1.5;
     color:#fff;
     font-family: manru;
     font-style:italic;
-    font-size:40px;
+    font-size:60px;
 }
+
+.history_area{
+    padding:50px;
+}
+
+.history_area .history_h2::after{
+    content: '그동안 지내온';
+    color:#ddd;
+    font-family: manru;
+    font-size:70px;
+    width:100%; height:100%;
+    position: absolute;
+    top:0;left:0;
+}
+.history_area .history_h2{
+    padding:20px;
+    font-size:30px;
+    position: relative;
+    overflow:hidden;
+}
+
+.school_box{
+    border:5px solid #ddbc29;
+    width:1095px;
+    height:150px;
+    margin:0 auto;
+}
+
+/* animation */
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* normal */
 .hidden_word{
     position: absolute;
     overflow: hidden;
