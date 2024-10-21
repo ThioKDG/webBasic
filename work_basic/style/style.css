@@ -1,11 +1,14 @@
-    /* import */
-    @import url(./font.css); 
-    @import url(./keyprames.css);
+/* import */
+@import url(./font.css); 
+@import url(./keyprames.css);
+
+html body{
+    height:100vh;
+}
 
 /* container */
 .container{
-    width:100%;
-    height:200vh;
+    width:100%;height:100%;
     display:flex;
     justify-content: flex-end;
     position: relative;
@@ -102,32 +105,118 @@ main .main_area p{
     font-size:60px;
 }
 
-.history_area{
+main .main_area p::after{
+    background:url('../img/arrow_down.png') no-repeat 50% 50%;
+    animation: onOff 1.8s linear infinite;
+    content: "";
+    width:50px; height:50px;
+    position: absolute;
+    top:150%;
+    left:50%;
+}
+
+main .history_area{
+    height: calc(100vh - 100px);
     padding:50px;
+    overflow:hidden;
 }
 
 .history_area .history_h2::after{
     content: '그동안 지내온';
-    color:#ddd;
+    color:#aaa;
     font-family: manru;
     font-size:70px;
     width:100%; height:100%;
     position: absolute;
     top:0;left:0;
+    z-index:-1;
+    opacity: .5;
 }
 .history_area .history_h2{
     padding:20px;
     font-size:30px;
+    font-weight: 600;
     position: relative;
     overflow:hidden;
+    z-index:999;
 }
 
 .school_box{
     border:5px solid #ddbc29;
-    width:1095px;
-    height:150px;
-    margin:0 auto;
+    border-radius: 20px;
+    padding:20px;
+    width:100%;
+    height:100px;
+    margin:50px auto;
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 231, 172, 1);
+-moz-box-shadow: 0px 0px 15px 10px rgba(255, 231, 172, 1);
+box-shadow: 0px 0px 15px 10px rgba(255, 231, 172, 1);
 }
+.school_box p{
+    font-family: manru;
+    font-size:25px;
+    margin: 15px 0;
+    font-style:italic;
+}
+.school_box p span{
+    margin-right:20px;
+}
+
+.history{
+    display:grid;
+    gap:20px;
+    align-items: center;
+    grid-template-columns: 200px  1fr;
+    grid-template-rows: repeat(3, 50px);
+}
+.history dt{
+    background:#fff462;
+    border-radius: 30px;
+    padding:15px;
+    font-size:18px;
+    font-weight:400;
+    text-align:center;
+}
+.history dd{
+    font-size:22px;
+    font-weight:500;
+    border-radius: 20px;
+    padding:0 15px;
+}
+
+/* skill_area */
+.area{
+    height:calc(100% - 40px);
+    padding:20px 50px;
+}
+.area .title{
+    text-align:center;
+    font-size:60px;
+    margin-top:30px;
+    position: relative;
+    font-family: manru;
+}
+.area .title::after{
+    content: 'Skills';
+    color:#aaa;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+    top:-35px;left:40%;
+    font-size:80px;
+    font-family: preten;
+    font-weight:800;
+}
+
+.skill_box{
+    margin-top:50px;
+}
+.skill_box .markUp{
+    padding:20px;
+    border:5px solid #ffbc2c;
+    border-radius: 20px;
+}
+
 
 /* animation */
 .tracking-in-contract {

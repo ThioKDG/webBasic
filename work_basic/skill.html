@@ -4,63 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introduce ThioKDG</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/reset.css">
 </head>
 <body>
-  <header>
-    <section id="header_area">
-      <div class="item"><a href="#">메인화면</a></div>
-      <div class="item"><a href="#">기술</a></div>
-      <div class="item"><a href="#">자기소개</a></div>
-      <div class="item"><a href="#">작업물❤️</a></div>  
-    </section>
-  </header>
-  <div class="main_area">
-    <h1>안녕하세요, 꿈을 쫒는 FE개발자 김동건입니다.</h1>
-    <div class="skill_markUp">
-      <div>
-        <img src="./img/" alt="#">
+  <div class="container">
+    <!-- header start -->
+    <header>
+      <div class="profile_area">
+        <a href="#">
+          <p class="hidden_word">프로필사진</p>
+        </a>
       </div>
-      <h3>html5, css3</h3>
-      <p>html로 기본 토대를 만들고 css로 세세하게 설정합니다.</p>
-    </div>
-
-    <div class="skill_program">
-      <div class="js">
-        <img src="./img/" alt="자스">
-        <h3>javascript</h3>
-        <p>JavaScript로 마크업된 페이지를 역동성이 있게 그리고 객체지향적으로 프로그래밍으로 기능을 만듭니다.</p>
+      <div class="name">
+        <h1>김동건</h1>
       </div>
-      <div class="java">
-        <img src="./img/" alt="자바">
-        <h3>JAVA</h3>
-        <p>JAVA를 사용하여 서버를 제어 및 구축합니다.</p>
+      <div id="nav_area">
+        <div class="item">
+          <a href="./index.html">메인화면</a>
+        </div>
+        <div class="item">
+          <a href="./skill.html" class="on">기술</a>
+        </div>
+        <div class="item">
+          <a href="./introduce.html">자기소개</a>
+        </div>
+        <div class="item">
+          <a href="./workout.html">작업물</a>
+        </div>
       </div>
-      <div class="clang">
-        <img src="./img/" alt="c언어">
-        <h3>C</h3>
-        <p>C language로 절차지향적 프로그램을 만듭니다.</p>
+    </header>
+    <!-- header end -->
+     <!-- main area -->
+    <main>
+      <div class="area">
+        <h2 class="title">보유 기술</h2>
+        <section class="skill_box">
+          <div class="markUp">
+            <div class="item">
+              <h3>마크업 언어</h3>
+              <p><img src="./img/markup.png" alt="htmlcss"></p>
+              <p>HTML5, CSS3</p>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="cpp">
-        <img src="./img/" alt="cpp언어">
-        <h3>C++</h3>
-        <p>객체지향적 프로그래밍을 합니다.</p>
-      </div>
-    </div>
-
-    <div class="skill_community">
-      <div class="git_hub">
-        <img src="./img/" alt="git_github">
-        <h3>git and github</h3>
-        <p>git과 github를 이용하여 버전관리 및 repository를 관리합니다.</p>
-      </div>
-      <div class="grapic">
-        <img src="./img/" alt="grapics">
-        <h3>Figma</h3>
-        <p>피그마, 포토샵, 일러스트레이터를 이용하여 프로토타입 페이지를 제작합니다.</p>
-      </div>
-    </div>
+    </main>
+    <!-- code end -->
   </div>
+    
 </body>
 </html>
